@@ -1,11 +1,12 @@
 language: python
 python:
-  - "3.5"
+- '3.5'
 install:
-  - pip install -r requirements.txt
+- pip install -r requirements.txt
 script:
-  - python test.py
+- python test.py
 deploy:
   provider: heroku
-  api_key: ...
-  app:
+  api_key:
+    secure: SknU508eXf012p1VLAHlxAlWOqL4btlw4CmpKny3uEbZHwlJyBI2mmCTEfDWUpDaBQtOkEhWk9ydKrMMhoA5Z5BWV7C7mDQQrN57dsqxjEtRFye/1c/LHGuuWG7FOFKmcrbfAS/0O+C72k/Cyh8dUeX0FfAMLoRrWorfziyBuVZDO3cX7+AF/0neTFxngSmGzN2ZROcv5I5QouFIT8KxiFBZ/z/k9gwfsAKp/foETvtR2EaechlKXOxM2Wl4oFVVvokEqd9Cs6y60g5SOB202yDjevl9WkaM5NbRIAW3LgM++4FxCO469sNKr23ZZj2Gy2iOVMcJlRibqz98s1Vq7yzZs6hE6FvStHwfqxd2wUjU4rbwD3CPZFxYy4Un0DYiLTEn1yT12ezwi+KC9Pm6oNRyDKRQy3GOuBBRBCYOEAQUQTJX7Ao60F8lPmC7st2Kex4CMmfX0MZRMiqw2pQGule+/Al1KkK1vE9IEBOEuZBBVk1ufCEGyxNFrYEBgsXdrfi5O3uYD/Hp03QFJYBzQkTC2erZb2gmyU0yHY0jfomJwAQM86SWd/oUO496ZminePQ9NBub4GX4EyYi1cVcQEfdROrijlCVNVQt4kgIBiTfVQmVq8ixgkJnuWOpzGNyOhJPcie6Q0VNqONJ3HxrcXnh4Zp25V9K56WOJ4ZH+Sk=
+  app: de0acloud
