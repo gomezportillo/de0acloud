@@ -8,7 +8,7 @@ Small project developing a python Flask server and automatically testing it on T
 
 ## Heroku URL
 
-https://de0acloud.herokuapp.com/
+[https://de0acloud.herokuapp.com/](https://de0acloud.herokuapp.com/)
 
 If its down just wait ~20 seconds for the heroku dynos to wake up.
 
@@ -23,6 +23,7 @@ pip3 freeze > requirements.txt
 ```
 
 </p>
+</details>
 
 * Write [server.py](server.py) and [test.py](test.py) and make sure it passes the tests
 <details>
@@ -32,6 +33,7 @@ python3 test.py
 ```
 
 </p>
+</details>
 
 * Create [travis](.travis.yml) config file with the appropriate information about the tests and commit to repo
 <details>
@@ -47,6 +49,7 @@ script:
 ```
 
 </p>
+</details>
 
 * Go to [travis-ci.org](hhttps://travis-ci.org/) and [heroku.com](https://heroku.com/) and sync repo on both sites
 <details>
@@ -54,6 +57,7 @@ script:
 Now you can add the travis _build status_ lab to the readme
 
 </p>
+</details>
 
 * Install `travis` and `heroku` CLI
 <details>
@@ -64,6 +68,7 @@ snap install --classic heroku
 ```
 
 </p>
+</details>
 
 * Login in both services
 <details>
@@ -74,6 +79,7 @@ travis login
 ```
 
 </p>
+</details>
 
 * Generate Heroku authentication token, encrypt it with Travis and automatically write it down on [travis](.travis.yml) config file and complete it
 <details>
@@ -83,6 +89,7 @@ travis encrypt $(heroku auth:token) --add deploy.api_key
 ```
 
 </p>
+</details>
 
 * Ensure there is at least one [dynos](https://www.heroku.com/dynos) assigned to heroku app
 <details>
@@ -92,5 +99,6 @@ heroku ps:scale web=1 --app de0acloud
 ```
 
 </p>
+</details>
 
 * Commit, push and it's done! Now it should go through travis tests and automatically be deployed on heroku if passing
