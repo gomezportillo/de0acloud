@@ -19,7 +19,7 @@ If its down just wait ~20 seconds for the heroku dynos to wake up.
 
 ```bash
 pip3 install flask
-pip3 freeze > requirements.txt
+pip3 freeze | grep "Flask" > requirements.txt
 ```
 </details>
 
